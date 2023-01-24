@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: #222222;
+}
+.wrapper form {
+  width: 400px;
+  border: 2px solid #fefefe;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper form .from_title {
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #fefefe;
+  text-align: center;
+}
+.wrapper form .lable {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: #fefefe;
+  margin-top: 25px;
+}
+.wrapper form .form_input {
+  height: 35px;
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-bottom: 1px solid #fefefe;
+  color: #fefefe;
+  outline: none;
+}
+.wrapper form .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  margin-top: 35px;
+  background: #fefefe;
+  color: #222222;
+  border: none;
+}
+.wrapper form .password_btn img {
+  width: 35px;
+  height: 30px;
+}
+.wrapper form .password_label {
+  position: relative;
+}
+.wrapper form .password_label .password_btn.active::after {
+  opacity: 0;
+}
+.wrapper form .password_label .password_btn {
+  position: absolute;
+  right: 15px;
+  top: 35px;
+  cursor: pointer;
+}
+.wrapper form .password_label .password_btn::after {
+  position: absolute;
+  content: "";
+  top: 11px;
+  right: 3px;
+  width: 30px;
+  height: 3px;
+  background: black;
+  transform: rotate(45deg);
+  transition: 0.3s all ease;
+  opacity: 1;
+}/*# sourceMappingURL=main.css.map */
