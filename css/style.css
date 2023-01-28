@@ -45,3 +45,9 @@
 .hidden {
     display: none;
 }
+.mb-3{
+    width: 100px;
+    height: 25px;
+    background-color: paleturquoise;
+    border-radius: 10px;
+}
