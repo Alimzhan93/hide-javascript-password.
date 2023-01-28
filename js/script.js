@@ -28,28 +28,30 @@ function twoSum(nums, target) {
 console.log(twoSum(nums,target))
 
 
-function romanToInt(s) {
-    let map = new Map();
-    map.set("I", 1);
-    map.set("V", 5);
-    map.set("X", 10);
-    map.set("L", 50);
-    map.set("C", 100);
-    map.set("D", 500);
-    map.set("M", 1000);
+// function romanToInt(s) {
+//     let map = new Map();
+//     map.set("I", 1);
+//     map.set("V", 5);
+//     map.set("X", 10);
+//     map.set("L", 50);
+//     map.set("C", 100);
+//     map.set("D", 500);
+//     map.set("M", 1000);
   
-    let result = 0;
-    for (let i = 0; i < s.length; i++) {
-      let current = map.get(s[i]);
-      let next = map.get(s[i+1]);
-      if (next && current < next) {
-        result -= current;
-      } else {
-        result += current;
-      }
-    }
-    return result;
-  }
+//     let result = 0;
+//     for (let i = 0; i < s.length; i++) {
+//       let current = map.get(s[i]);
+//       let next = map.get(s[i+1]);
+//       if (next && current < next) {
+//         result -= current;
+//       } else {
+//         result += current;
+//       }
+//     }
+//     return result;
+//   }
+
+
 const slide = document.querySelector('#slide')
 const output = document.querySelector('#output')
 
@@ -61,3 +63,26 @@ slide.oninput = () =>{
     showValue()
 }
 showValue()
+
+const saveEmail = () => {
+  // В реальности email приходит из формы
+  const email = '  SuppORT@hexlet.IO';
+  // обрезаем пробельные символы
+  const trimmedEmail = email.trim();
+  const preparedEmail = trimmedEmail.toLowerCase();
+  console.log(preparedEmail);
+  // здесь будет запись в базу данных
+}
+saveEmail()
+
+const button = document.querySelector('#button')
+const content = document.querySelector('#content')
+button.addEventListener('click', () =>{
+  
+  if (content.classList.toggle('content-hidden')){
+    button.textContent = "Открыть блок"
+  }else{
+    button.textContent = "Закрыть блок"
+  }  
+})
+
