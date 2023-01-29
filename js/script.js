@@ -75,6 +75,7 @@ const saveEmail = () => {
 }
 saveEmail()
 
+// скрыть/открыть блок
 const button = document.querySelector('#button')
 const content = document.querySelector('#content')
 button.addEventListener('click', () =>{
@@ -85,4 +86,12 @@ button.addEventListener('click', () =>{
     button.textContent = "Закрыть блок"
   }  
 })
+///Аккордеон
 
+const headers = document.querySelectorAll('[data-name="accordeon-title"]')
+
+headers.forEach(function (item) {
+  item.addEventListener('click',function(){
+    this.nextElementSibling.classList.toggle('hidden')
+  })
+})
