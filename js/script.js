@@ -87,7 +87,7 @@ button.addEventListener('click', () =>{
   }  
 })
 ///Аккордеон
-
+//1.вариант
 const headers = document.querySelectorAll('[data-name="accordeon-title"]')
 
 headers.forEach(function (item) {
@@ -95,3 +95,14 @@ headers.forEach(function (item) {
     this.nextElementSibling.classList.toggle('hidden')
   })
 })
+///2.вариант
+
+// headers.forEach(function(item){
+//   item.addEventListener('click'())
+// })
+
+// function showContent() {
+//   this.nextElementSibling.classList.toggle('hidden')
+// }
+
+

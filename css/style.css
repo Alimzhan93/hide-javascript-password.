@@ -87,3 +87,25 @@
     border-radius: 10px;
     font-size: 20px;
 }
+.tablica-group{
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+        
+}
+.tablica-group-item{
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    border: solid red;
+    border-radius: 10px;
+}
+.tabl{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: solid red;
+    margin-top: 50px;
+}
