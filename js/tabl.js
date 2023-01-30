@@ -13,6 +13,10 @@ tablHeaders.forEach(function(item){
          // 2. Выбрать нужный content box и показать его
 
     const contentBox = document.querySelector('#' + this.dataset.tab)
-    contentBox.classList.remove('hidden')
+   
+    setTimeout(() => {
+        contentBox.classList.remove('hidden')
+    },1000)
     })
 })
+
