@@ -168,3 +168,6 @@
     bottom: 0;
     background-color: rgba(8, 112, 32, 0.69);
 }
+.btn-dark{
+    cursor: pointer;
+}
