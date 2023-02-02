@@ -171,3 +171,28 @@
 .btn-dark{
     cursor: pointer;
 }
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: red; 
+    border-radius: 50%;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: #3bd9d9;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid forestgreen;
+}
+.figures{
+    width: 100%;
+    height: 130vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
